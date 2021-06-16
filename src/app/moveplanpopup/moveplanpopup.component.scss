@@ -1,0 +1,51 @@
+.details {
+}
+
+.details_mover {
+  .mover_header {
+    display: flex;
+    .header_about {
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+      h1 {
+        font-family: "Averta CY";
+        font-weight: 700;
+        font-size: 28px;
+        color: #403f4c;
+      }
+      p {
+        font-family: "Averta CY";
+        font-weight: 400;
+        font-size: 14px;
+        color: #403f4c;
+      }
+    }
+    .header_close {
+      display: flex;
+      align-items: baseline;
+      a {
+        font-family: "Averta CY";
+        font-weight: 700;
+        font-size: 14px;
+        color: #404f4c;
+      }
+    }
+  }
+
+  .mover_body {
+    display: flex;
+    justify-content: space-between;
+    .body_update-plan {
+      button {
+        width: 160px;
+        height: 40px;
+        border: 1px solid tomato;
+      }
+    }
+    .body_company {
+      display: flex;
+    }
+  }
+}

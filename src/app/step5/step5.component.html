@@ -1,0 +1,305 @@
+<!-- <article class="article">
+  <section class="information">
+    <div class="information_contact">
+      <h3>Contact information</h3>
+      <div class="contact-fields">
+        <div class="fields-number">
+          <input type="number" placeholder="Phone number" />
+        </div>
+        <div class="fields-name">
+          <input type="text" placeholder="Name" />
+        </div>
+      </div>
+    </div>
+    <div class="information_billing">
+      <div class="billing-method">
+        <h3>Billing</h3>
+        <div class="method-paypal">
+          <input id="paypal" type="radio" />
+          <label for="paypal">PayPal</label>
+        </div>
+        <div class="method-card">
+          <input id="card" type="radio" />
+          <label for="card">Credit or Debit card</label>
+        </div>
+      </div>
+      <div class="billing-image">
+        <img src="../../assets/icon-mastercard.svg" alt="Mastercard" />
+        <img
+          src="../../assets/icon-american-express.svg"
+          alt="American Express"
+        />
+        <img src="../../assets/icon-visa.svg" alt="Visa" />
+      </div>
+    </div>
+    <div class="information_billing-card">
+      <div class="card-name"><input type="text" placeholder="John Doe" /></div>
+      <div class="card-number">
+        <input type="number" placeholder="0000 0000 0000 0000" />
+      </div>
+      <div class="card-secure">
+        <input class="secure-field" type="text" placeholder="MM / YY" />
+        <input class="secure-field" type="number" placeholder="***" />
+      </div>
+      <div class="card-secured-info">
+        <img src="../../assets/icon-lock.svg" alt="Lock" />
+        <p>Your transaction is secured with SSL encryption</p>
+      </div>
+    </div>
+  </section>
+  <section class="mover">
+    <div class="mover_about">
+      <div class="about-your-mover">
+        <div class="mover-title">
+          <h2 class="about-title">your mover</h2>
+          <a href="#">Review move plan</a>
+        </div>
+        <div class="mover-body">
+          <div class="body-image">
+            <img src="../../assets/icon-mover.svg" alt="" />
+          </div>
+          <div class="body-about">
+            <h1>
+              NYC Great Movers <br />
+              <span>Bronx, NY</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="about-move-route">
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title class="about-title">move route</mat-panel-title>
+            <mat-panel-description> edit </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div class="route-row">
+            <img src="../../assets/icon-location.svg" alt="Location" />
+            <p>1901 Thornridge Cir. Shiloh...</p>
+          </div>
+          <div class="route-row">
+            <img src="../../assets/icon-location.svg" alt="Location" />
+            <p>2715 Ash Dr. San Jose, Sou...</p>
+          </div>
+          <div class="route-row">
+            <img src="../../assets/icon-location.svg" alt="Location" />
+            <p>3891 Ranchview Dr. Richa...</p>
+          </div>
+        </mat-expansion-panel>
+      </div>
+      <div class="about-details">
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title class="about-title">details</mat-panel-title>
+            <mat-panel-description> edit </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div class="details-date">
+            <p>Move Date <br />Saturday, April, 03, 2021</p>
+            <p>Mover Arrival Time<br />8:00 AM - 12:00 AM</p>
+          </div>
+          <div class="details-arrival-time"></div>
+        </mat-expansion-panel>
+      </div>
+      <div class="about-pricing">
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title class="about-title">pricing</mat-panel-title>
+            <mat-panel-description> Detailed price </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div class="pricing-row">
+            <p>Moving</p>
+            <p>$385.08</p>
+          </div>
+          <div class="pricing-row">
+            <p>Travel</p>
+            <p>$307.44</p>
+          </div>
+          <div class="pricing-row">
+            <p>Mover special</p>
+            <p>-$34.63</p>
+          </div>
+        </mat-expansion-panel>
+      </div>
+      <div class="about-total">
+        <h1>Grand total</h1>
+        <h1>$569.08</h1>
+      </div>
+    </div>
+    <div class="mover_promocode">
+      <input id="promocode" type="checkbox" />
+      <label for="promocode">I’ve got promocode</label>
+    </div>
+    <div class="mover_book-move">
+      <a href="">book yout move</a>
+    </div>
+    <div class="mover_checkbox">
+      <div class="checkbox-cancellation">
+        <input id="cancellation" type="checkbox" />
+        <label for="cancellation"
+          >Free cancellation up to 2 business days before your move</label
+        >
+      </div>
+      <div class="checkbox-coverage">
+        <input id="coverage" type="checkbox" />
+        <label for="coverage"
+          >Every move is covered by <a href="">standard coverage</a></label
+        >
+      </div>
+    </div>
+  </section>
+</article> -->
+
+<div class="header"></div>
+<div class="stepper"></div>
+<div class="subheader">
+  <h1>Reserve with Great Movers now - pay later!</h1>
+  <p>
+    Your card will only be charged 2 business days before your move. If plans
+    change, cancel for free before then.
+  </p>
+</div>
+<article class="book-your-move">
+  <section class="book-your-move_information">
+    <div class="information_contact">
+      <h3>Contact information</h3>
+      <input class="field" type="number" />
+      <input class="field" type="text" />
+    </div>
+    <div class="information_billing">
+      <div class="billing_method">
+        <div class="billing_method-items">
+          <h3>Billing</h3>
+          <div class="billing_method-item">
+            <input id="paypal" type="radio" />
+            <label for="paypal">PayPal</label>
+          </div>
+          <div class="billing_method_item">
+            <input id="card" type="radio" />
+            <label for="card">Credit or Debit card</label>
+          </div>
+        </div>
+        <div class="billing_logo">
+          <img src="../../assets/icon-mastercard.svg" alt="Mastercard" />
+          <img
+            src="../../assets/icon-american-express.svg"
+            alt="AmericanExpress"
+          />
+          <img src="../../assets/icon-visa.svg" alt="Visa" />
+        </div>
+      </div>
+      <div class="billing_card-information">
+        <input class="field" type="text" placeholder="John Doe" />
+        <input class="field" type="number" placeholder="0000 0000 0000 0000" />
+        <div class="billing_card-information-secure">
+          <input class="field-small" type="number" placeholder="MM / YY" />
+          <input class="field-small" type="number" placeholder="***" />
+        </div>
+      </div>
+    </div>
+    <div class="information_secured">
+      <img src="../../assets/icon-lock.svg" alt="Lock" />
+      <p>Your transaction is secured with SSL encryption</p>
+    </div>
+  </section>
+  <section class="book-your-move_your-mover">
+    <div class="mover_your-mover">
+      <div class="your-mover-header">
+        <h3>Your Mover</h3>
+        <!-- <a href="#" (click)="openDialog()">Review move plan</a> -->
+        <button (click)="openDialog()">Review move plan</button>
+      </div>
+      <div class="your-mover-body">
+        <div class="body-image">
+          <img src="../../assets/icon-mover.svg" alt="Your mover" />
+        </div>
+        <div class="body-about-mover">
+          <h1>NYC Great Movers</h1>
+          <p>Bronx, NY</p>
+        </div>
+      </div>
+    </div>
+    <div class="mover_move-card">
+      <mat-expansion-panel
+        class="mover-card_panel"
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header class="panel_header">
+          <mat-panel-title class="header-title"> move route </mat-panel-title>
+          <mat-panel-description class="header-description"
+            >Edit</mat-panel-description
+          >
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+      </mat-expansion-panel>
+    </div>
+    <div class="mover_move-card">
+      <mat-expansion-panel
+        class="mover-card_panel"
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header class="panel_header">
+          <mat-panel-title class="header-title"> details </mat-panel-title>
+          <mat-panel-description class="header-description"
+            >Edit</mat-panel-description
+          >
+        </mat-expansion-panel-header>
+        <div class="panel_body-details">
+          <div class="body-details_item">
+            <p>
+              Move date <br />
+              <span>Saturday, April 03, 2021</span>
+            </p>
+          </div>
+          <div class="body-details_item">
+            <p>
+              Mover Arrival Time <br />
+              <span>8:00 AM - 12:00 AM</span>
+            </p>
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </div>
+    <div class="mover_move-card">
+      <mat-expansion-panel
+        class="mover-card_panel"
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header class="panel_header">
+          <mat-panel-title class="header-title"> pricing </mat-panel-title>
+          <mat-panel-description class="header-description"
+            >Edit</mat-panel-description
+          >
+        </mat-expansion-panel-header>
+        <div class="panel_body-pricing">
+          <div class="body-pricing-item">
+            <p>Moving:</p>
+            <p>$385.08</p>
+          </div>
+          <div class="body-pricing-item">
+            <p>Travel:</p>
+            <p>$307.44</p>
+          </div>
+          <div class="body-pricing-item">
+            <p>Mover special:</p>
+            <p>-$34.63</p>
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </div>
+    <div class="mover_total">
+      <h1>Grand total:</h1>
+      <h1>$569.08</h1>
+    </div>
+  </section>
+</article>

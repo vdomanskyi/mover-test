@@ -1,0 +1,79 @@
+// TEMP STYLE FROM:
+* {
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+// TEMP STYLE TO:
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  .container_item {
+    padding-right: 10px;
+    &:last-child {
+      padding-right: 0px;
+    }
+    .item-title {
+      color: #bbb8d1;
+      font-family: "Jeko-Light";
+      font-size: 18px;
+      font-weight: 400;
+      padding-bottom: 20px;
+    }
+    ul {
+      li {
+        a {
+          color: #494568;
+          font-family: "Jeko-Medium";
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 30px;
+        }
+      }
+    }
+    .item_social {
+      padding-top: 30px;
+      ul {
+        display: flex;
+        li {
+          padding-right: 40px;
+          &:last-child {
+            padding-right: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer_subfooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #262240;
+  padding: 15px 0px;
+  .subfooter_about {
+    p {
+      color: #fff;
+      font-family: "Jeko-Medium";
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+}

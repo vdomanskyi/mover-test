@@ -1,0 +1,208 @@
+.div {
+  width: 350px;
+  height: 50px;
+  border: 1px solid #e7e7e7;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+  padding-bottom: 0.5rem;
+}
+
+// ---
+
+* {
+  text-decoration: none;
+}
+
+.section {
+  width: 420px;
+  height: 670px;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header_register-login {
+  display: flex;
+  align-items: center;
+  padding-left: 35px;
+}
+
+.register-login-register {
+  cursor: pointer;
+  width: 90px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &:hover {
+    border-bottom: 1px solid #000;
+    a {
+      color: #403f4c;
+    }
+  }
+  a {
+    font-size: 14px;
+    color: #9a9a9a;
+    text-transform: uppercase;
+  }
+}
+
+.register-login-login {
+  cursor: pointer;
+  width: 90px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &:hover {
+    border-bottom: 1px solid #000;
+    a {
+      color: #403f4c;
+    }
+  }
+  a {
+    font-size: 14px;
+    color: #9a9a9a;
+    text-transform: uppercase;
+  }
+}
+
+.header_close {
+  display: flex;
+  // align-items: center;
+  ul {
+  }
+  li {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
+    p {
+      font-size: 14px;
+      color: #403f4c;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.body {
+  padding: 20px 35px 20px 35px;
+  // border: 1px dotted tomato;
+}
+
+.body_title {
+  font-size: 18px;
+  color: #000;
+}
+
+.field {
+  // border: 1px dotted tomato;
+  width: 340px;
+  height: 50px;
+  border: 1px solid #e7e7e7;
+  padding: 5px 0 0 10px;
+  button {
+    background-color: #fff;
+    border: none;
+    padding-right: 10px;
+  }
+}
+
+.field-email {
+  width: 340px;
+  height: 50px;
+  border: 1px solid #e7e7e7;
+  padding: 5px 0 0 10px;
+  // margin-bottom: 30px;
+}
+
+.body_field-email {
+}
+
+.body_field-password {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.body-checkbox {
+  padding-top: 20px;
+  display: flex;
+  .checkbox {
+    padding-left: 10px;
+    color: #403f4c;
+  }
+}
+
+.button {
+  cursor: pointer;
+  width: 350px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // border: 1px dotted tomato;
+}
+
+.body_create-account {
+  margin-top: 40px;
+  background-color: #403f4c;
+  a {
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+
+.body_login-via {
+  padding-top: 20px;
+}
+
+.via-facebook {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #403f4c;
+  background-color: #e9e9e9;
+  img {
+    margin-right: 10px;
+  }
+}
+
+.via-google {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #403f4c;
+  margin-top: 10px;
+  background-color: #e9e9e9;
+  img {
+    margin-right: 10px;
+  }
+}
+
+.input.ng-invalid {
+  border: 2px solid tomato;
+}
+
+.input.ng-valid {
+  border: 2px solid green;
+}
+
+.error-field {
+  color: tomato;
+}

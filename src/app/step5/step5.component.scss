@@ -1,0 +1,310 @@
+// .field {
+//   width: 400px;
+//   height: 60px;
+// }
+
+// .article {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
+// .information {
+//   border: 1px solid pink;
+
+//   max-width: 400px;
+// }
+
+// .contact-fields {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .information_billing {
+//   border: 1px solid tomato;
+
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .billing-image {
+//   border: 1px solid green;
+
+//   display: flex;
+//   align-items: flex-end;
+// }
+
+// .information_billing-card {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .card-secure {
+//   .secure-field {
+//     width: 170px;
+//   }
+// }
+
+// .card-secured-info {
+//   display: flex;
+// }
+
+// .mover {
+//   width: 315px;
+// }
+
+// .about-your-mover {
+//   border: 1px solid tomato;
+
+//   padding: 24px 24px 0 24px;
+//   .mover-title {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     a {
+//       margin-bottom: 16px;
+//     }
+//   }
+
+//   .mover-body {
+//     display: flex;
+
+//     .body-image {
+//       padding-right: 15px;
+//     }
+//     .body-about {
+//       h1 {
+//         font-size: 20px;
+//         font-weight: 700;
+//         line-height: 20px;
+//       }
+//       span {
+//         // line-height: 1px;
+//         font-size: 12px;
+//         font-weight: 400;
+//       }
+//     }
+//   }
+// }
+
+// .about-move-route {
+//   .route-row {
+//     display: flex;
+//     align-items: center;
+//     p {
+//       font-size: 13px;
+//       font-weight: 700;
+//     }
+//   }
+// }
+
+// .about-title {
+//   font-size: 14px;
+//   font-weight: 700;
+//   color: #c4c4c4;
+//   text-transform: uppercase;
+//   font-family: "Averta CY";
+// }
+
+// .about-pricing {
+//   .pricing-row {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+// }
+
+// .mover_book-move {
+//   border: 1px solid peachpuff;
+
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 315px;
+//   height: 60px;
+// }
+
+// .about-total {
+//   display: flex;
+//   justify-content: space-between;
+//   background-color: #e3e3e3;
+//   padding: 10px 24px 0 24px;
+// }
+
+// !!! THIS IS TEMP STYLE FROM:
+* {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  background: #4c4c4c;
+}
+
+.stepper {
+  width: 100%;
+  height: 60px;
+  background: #403f4c;
+}
+
+.subheader {
+  border-bottom: 1px solid #d7d7d7;
+  h1 {
+    font-size: 28px;
+    color: 403f4c;
+  }
+  p {
+    font-size: 16px;
+    color: #a4a2b7;
+  }
+}
+
+.field {
+  width: 400px;
+  height: 60px;
+}
+
+.field-small {
+  width: 170px;
+  height: 60px;
+}
+// !!! THIS IS TEMP STYLE TO:
+
+.book-your-move {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.book-your-move_information {
+  margin-right: 100px;
+  .information_contact {
+    display: flex;
+    flex-direction: column;
+    input {
+      margin-bottom: 20px;
+    }
+    h3 {
+      color: #a4a2b7;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: "Averta CY";
+    }
+  }
+  .information_billing {
+    .billing_method {
+      display: flex;
+      justify-content: space-between;
+      .billing_method-items {
+        h3 {
+          color: #a4a2b7;
+          font-size: 16px;
+          font-weight: 400;
+          font-family: "Averta CY";
+        }
+      }
+      .billing_logo {
+        display: flex;
+        // justify-content: flex-end;
+        align-items: flex-end;
+      }
+    }
+    .billing_card-information {
+      display: flex;
+      flex-direction: column;
+      input {
+        margin-bottom: 10px;
+      }
+      .billing_card-information-secure {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .information_secured {
+    border: 1px solid tomato;
+
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.book-your-move_your-mover {
+  width: 315px;
+  .mover_your-mover {
+    border: 1px solid tomato;
+    .your-mover-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px 10px 20px;
+    }
+    .your-mover-body {
+      display: flex;
+      padding: 0 20px 10px 20px;
+      .body-image {
+        padding-right: 15px;
+      }
+      .body-about-mover {
+        h1 {
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  .mover_move-card {
+    .mover-card_panel {
+      .panel_header {
+        flex-direction: row-reverse;
+        .header-title {
+          color: #c4c4c4;
+          padding-left: 10px;
+          text-transform: uppercase;
+        }
+        .header-description {
+          display: flex;
+          justify-content: flex-end;
+          color: #403f4c;
+          font-family: "Averta CY";
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+
+      .panel_body-details {
+        .body-details_item {
+          p {
+            color: gray;
+            span {
+              font-size: 16px;
+              color: black;
+            }
+          }
+        }
+      }
+
+      .panel_body-pricing {
+        .body-pricing-item {
+          display: flex;
+          justify-content: space-between;
+          p {
+            color: #777;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .mover_total {
+    padding: 10px 20px 0 25px;
+    background-color: #e3e3e3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: 18px;
+      font-weight: 700;
+      font-family: "Averta CY";
+    }
+  }
+}

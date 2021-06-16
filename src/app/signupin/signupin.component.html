@@ -1,0 +1,94 @@
+<article class="auth">
+  <div class="auth_header">
+    <div class="auth_header-button">
+      <a href="#" [class.active]="logIn" (click)="loginIsActive()">log in</a>
+      <a href="#" [class.active]="register" (click)="registerIsActive()"
+        >register</a
+      >
+    </div>
+    <div class="auth_header-close">
+      <a href="#"><img src="../../assets/icon-close.svg" alt="Close" /></a>
+    </div>
+  </div>
+  <section *ngIf="logIn == true" class="auth_login">
+    <h1 class="auth_login-title">Welcome to MoverSmith</h1>
+    <form class="auth_login-form" [formGroup]="formLogin">
+      <div class="form-fields">
+        <input
+          class="field"
+          type="email"
+          placeholder="EMAIL"
+          formControlName="email"
+        />
+        <input
+          class="field"
+          type="password"
+          placeholder="PASSWORD"
+          formControlName="password"
+        />
+      </div>
+      <button class="button button-login" (click)="login()">login</button>
+    </form>
+    <div class="auth_or">
+      <div class="auth_or-left"></div>
+      <div class="auth_or-text">or</div>
+      <div class="auth_or-right"></div>
+    </div>
+    <div class="auth_via">
+      <div class="button button_auth-via auth_via-facebook">
+        <a href="#">
+          <img src="../../assets/icon-facebook.svg" alt="Facebook logo" />
+          facebook login
+        </a>
+      </div>
+      <div class="button button_auth-via auth_via-google">
+        <a href="#">
+          <img src="../../assets/icon-google.svg" alt="Google logo" />
+          google login
+        </a>
+      </div>
+    </div>
+  </section>
+  <section *ngIf="register == true" class="auth_register">
+    <h1 class="auth_register-title">Welcome to MoverSmith</h1>
+    <form class="auth_register-form" [formGroup]="form">
+      <div class="form-fields">
+        <input
+          class="field"
+          type="email"
+          placeholder="EMAIL"
+          formControlName="email"
+        />
+        <input
+          class="field"
+          type="password"
+          placeholder="PASSWORD"
+          formControlName="password"
+        />
+        <input class="field" type="password" placeholder="REPEAT PASSWORD" />
+      </div>
+      <button class="button button-create" (click)="onSubmit()">
+        create an account
+      </button>
+    </form>
+    <div class="auth_or">
+      <div class="auth_or-left"></div>
+      <div class="auth_or-text">or</div>
+      <div class="auth_or-right"></div>
+    </div>
+    <div class="auth_via">
+      <div class="button button_auth-via auth_via-facebook">
+        <a href="#">
+          <img src="../../assets/icon-facebook.svg" alt="Facebook logo" />
+          facebook login
+        </a>
+      </div>
+      <div class="button button_auth-via auth_via-google">
+        <a href="#">
+          <img src="../../assets/icon-google.svg" alt="Google logo" />
+          google login
+        </a>
+      </div>
+    </div>
+  </section>
+</article>
